@@ -1,0 +1,55 @@
+@import "~antd/dist/reset.css"; // 注意 ~ 符号
+
+@primary-color: #1890ff;
+@link-color: #1890ff;
+@border-radius-base: 4px;
+@background-color: #f0f2f5; // 定义统一的背景颜色
+
+body,
+#root {
+  background-color: @background-color;
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.card {
+  background: #fff; // 保持卡片背景为白色
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+  margin-bottom: 24px;
+  width: 100%;
+}
+
+.page-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: @primary-color;
+  margin-bottom: 24px;
+}
+
+// 媒体查询，适应移动端
+@media (max-width: 768px) {
+  .container {
+    padding: 16px;
+  }
+
+  .card {
+    padding: 16px;
+  }
+
+  .page-title {
+    font-size: 24px;
+  }
+}
+
+// 为导航栏添加背景色
+.ant-menu {
+  background-color: #fff;
+}
