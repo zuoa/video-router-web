@@ -14,6 +14,9 @@
 /.umi
 /.umi-production
 /.umi-test
+.umi
+.umi-production
+.umi-test
 
 # Misc
 .DS_Store
@@ -53,3 +56,19 @@ yarn-error.log*
 
 # dotenv environment variables file
 .env
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# Temporary files
+*.log
+*.tmp
+*.temp
